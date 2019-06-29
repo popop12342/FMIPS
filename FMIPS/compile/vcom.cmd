@@ -1,0 +1,1 @@
+-w -erf d:/My_Designs/FMIPS/FMIPS/compile/FMIPS.erf -d d:/My_Designs/FMIPS/FMIPS/compile -s d:/My_Designs/FMIPS/library.cfg -j d:/My_Designs/FMIPS/FMIPS/projlib.cfg -work FMIPS -O3 -e 100 -work FMIPS -2002 d:/My_Designs/FMIPS/FMIPS/src/MemoriaPrincipal.vhd 

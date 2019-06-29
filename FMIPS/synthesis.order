@@ -1,0 +1,4 @@
+i<>.\src\CacheInstrucoes.vhd
+i<>.\src\CacheInstrucoes_TB.vhd
+i<>.\src\MemoriaPrincipal.vhd
+i<>.\src\MemoriaPrincipal_TB.vhd

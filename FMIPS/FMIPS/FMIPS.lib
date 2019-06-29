@@ -1,0 +1,60 @@
+timestamp=1561844007981
+
+[~A]
+ModifyID=154
+Version=74
+
+[cacheinstrucoes]
+A/cacheinstrucoesarc=A/CacheInstrucoesArc 21|./../src/CacheInstrucoes.vhd|18|1*744738
+BinI32/cacheinstrucoesarc=3*203805
+I=0*674
+I/cacheinstrucoesarc=I/CacheInstrucoesArc 0*258025
+M=11|0|vde|1559393578550|./../src/CacheInstrucoes.vhd|0*231*0x76e32e8bc6d16d614eee359ae76a74705df664d7|0*577*0x23b75c12e3e89f2ef000564498faa8c2
+M/cacheinstrucoesarc=M/CacheInstrucoesArc 21|0|vde|1561843968868|./../src/CacheInstrucoes.vhd|0*4465*0x4d9e455e853df5f703db9be4d5d84fd75e966eaa|0*4923*0x20116f55b147878295aeff36dce7fc50
+R=./../src/CacheInstrucoes.vhd|8
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcb7f77fbf50fb9b46fc7247ff0408e4ca97b8a12c3f384f0805f286127ea3b0b63
+Version/cacheinstrucoesarc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcbb26c6ed3c47e1f9492e955df7492b8cc054096421ffc86d09c79fcbd698ad749
+
+[cacheinstrucoes_tb]
+A/cacheinstrucoes_tb_arc=A/CacheInstrucoes_TB_arc 21|./../src/CacheInstrucoes_TB.vhd|12|1*745985
+BinI32/cacheinstrucoes_tb_arc=3*204156
+I=0*2171
+I/cacheinstrucoes_tb_arc=I/CacheInstrucoes_TB_arc 0*258292
+M=11|0|vde|1559395041823|./../src/CacheInstrucoes_TB.vhd|0*1832*0x6fe6fd5d6fde40eea49b803f42b31efae63e652e|0*2068*0x23b75c12e3e89f2ef000564498faa8c2
+M/cacheinstrucoes_tb_arc=M/CacheInstrucoes_TB_arc 21|0|vde|1561843969045|./../src/CacheInstrucoes_TB.vhd|0*3254*0x78d5b3b633dc32e6f8ec71e29f5c806bd22edda8|0*3979*0x20116f55b147878295aeff36dce7fc50
+R=./../src/CacheInstrucoes_TB.vhd|9
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcb014e6e32ef4fa5b1ed7b5b6ae3d3ca1f6a5bf65446be972b93dafe03ef111127
+Version/cacheinstrucoes_tb_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcb792b898fe416d053c8a83c7c593b2751229296dfba4d223f90700ca08e0ae44c
+
+[memoriaprincipal]
+A/behavioral=21|./../src/MemoriaPrincipal.vhd|19|1*751895
+BinI32/behavioral=3*206221
+I=0*227686
+I/behavioral=0*262915
+M=11|0|vde|1561841228269|./../src/MemoriaPrincipal.vhd|0*227089*0xeafe833aae935d5d7c1b331d01155814f4122172|0*227587*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=21|0|vde|1561844007822|./../src/MemoriaPrincipal.vhd|0*261160*0x0c8693794c38b9bc8a5eb1852cef3fea09f13fb7|0*262802*0x20116f55b147878295aeff36dce7fc50
+R=./../src/MemoriaPrincipal.vhd|8
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|43a6b3be1289439ddc45dada1c23c96ffe8e3b71131eed5c025fad82c558a49e004166499252043161b4f2360354d541
+Version/behavioral=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff41fe0859c5637c86ed27648a84645cc8a
+
+[memoriaprincipal_tb]
+A/memoriaprincipal_tb_arc=A/MemoriaPrincipal_TB_arc 21|./../src/MemoriaPrincipal_TB.vhd|8|1*749881
+BinI32/memoriaprincipal_tb_arc=3*205785
+I=0*9325
+I/memoriaprincipal_tb_arc=I/MemoriaPrincipal_TB_arc 0*260800
+M=11|0|vde|1559487241284|./../src/MemoriaPrincipal_TB.vhd|0*8980*0xb9d68e6ff39e240a8b4ea3162e1f4d3987ac0da3|0*9220*0x23b75c12e3e89f2ef000564498faa8c2
+M/memoriaprincipal_tb_arc=M/MemoriaPrincipal_TB_arc 21|0|vde|1561843969220|./../src/MemoriaPrincipal_TB.vhd|0*245154*0x1beb4acb3f57fe670bd52b472fc01ca173987c78|0*246271*0x20116f55b147878295aeff36dce7fc50
+R=./../src/MemoriaPrincipal_TB.vhd|5
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|43a6b3be1289439ddc45dada1c23c96fcf7a253d860b1fadf3b39a0b20c9332ae545a3c9c6907dfc981f5d56befddb8b
+Version/memoriaprincipal_tb_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|43a6b3be1289439ddc45dada1c23c96f3fa6f5dbdd6c238cc972029a4740996d26527262ddaa47cb266f3a3c4d9b973a760eae36af052985f76e4422f644f552
+
+[~MFT]
+0=8|0FMIPS.mgf|262915|253824
+1=2|1FMIPS.mgf|751895|747083
+3=2|3FMIPS.mgf|206221|205097
+
+[~U]
+cacheinstrucoes=CacheInstrucoes 11|0*0|
+cacheinstrucoes_tb=CacheInstrucoes_TB 11|0*1690|
+memoriaprincipal=MemoriaPrincipal 11|0*226845|
+memoriaprincipal_tb=MemoriaPrincipal_TB 11|0*8836|

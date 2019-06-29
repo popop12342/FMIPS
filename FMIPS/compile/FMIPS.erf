@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: d:\My_Designs\FMIPS\FMIPS\src\MemoriaPrincipal.vhd" 
+MESSAGE "Compile Entity "MemoriaPrincipal"" 
+MESSAGE "Compile Architecture "behavioral" of Entity "MemoriaPrincipal"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 
