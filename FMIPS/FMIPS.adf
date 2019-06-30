@@ -48,20 +48,26 @@ ShowHide=ShowTopLevel
 Selected=
 
 [Files]
-/CacheInstrucoes.vhd=-1
+/CacheInstrucoes_FD.vhd=-1
 /CacheInstrucoes_TB.vhd=-1
 /MemoriaPrincipal.vhd=-1
 /MemoriaPrincipal_TB.vhd=-1
 /MP_teste.asdb=-1
 /MP_teste.awc=-1
+/CacheInstrucoes_UC.vhd=-1
+/CacheInstrucoes.vhd=-1
+/CacheInstrucoes_teste.asdb=-1
+/CacheInstrucoes_teste.awc=-1
 
 [Files.Data]
-.\src\CacheInstrucoes.vhd=VHDL Source Code
+.\src\CacheInstrucoes_FD.vhd=VHDL Source Code
 .\src\CacheInstrucoes_TB.vhd=VHDL Source Code
 .\src\MemoriaPrincipal.vhd=VHDL Source Code
 .\src\MemoriaPrincipal_TB.vhd=VHDL Source Code
-.\src\untitled.asdb=Accelerated Waveform File
-.\src\untitled.awc=Accelerated Waveform Configuration
 .\src\MP_teste.asdb=Accelerated Waveform File
 .\src\MP_teste.awc=Accelerated Waveform Configuration
 
+.\src\CacheInstrucoes_UC.vhd=VHDL Source Code
+.\src\CacheInstrucoes.vhd=VHDL Source Code
+.\src\CacheInstrucoes_teste.asdb=Accelerated Waveform File
+.\src\CacheInstrucoes_teste.awc=Accelerated Waveform Configuration

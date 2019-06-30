@@ -1,32 +1,41 @@
-Active-HDL 10.5.217.6767 2019-06-29 18:33:28
+Active-HDL 10.5.217.6767 2019-06-30 15:22:51
 
 Elaboration top modules:
-Architecture                  MemoriaPrincipal_TB_arc(MemoriaPrincipal_TB)
+Architecture                  CacheInstrucoes_TB_arc(CacheInstrucoes_TB)
 
 
----------------------------------------------------------------------------------------------------------------
-Entity              | Architecture            | Library | Info | Compiler Version        | Compilation Options
----------------------------------------------------------------------------------------------------------------
-MemoriaPrincipal_TB | MemoriaPrincipal_TB_arc | fmips   |      | 10.5.217.6767 (Windows) | -O3
-MemoriaPrincipal    | behavioral              | fmips   |      | 10.5.217.6767 (Windows) | -O3
----------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+Entity             | Architecture           | Library | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------------------
+CacheInstrucoes_TB | CacheInstrucoes_TB_arc | fmips   |      | 10.5.217.6767 (Windows) | -O3
+CacheInstrucoes    | CacheInstrucoes_Arc    | fmips   |      | 10.5.217.6767 (Windows) | -O3
+MemoriaPrincipal   | behavioral             | fmips   |      | 10.5.217.6767 (Windows) | -O3
+CacheInstrucoes_FD | CacheInstrucoesArc     | fmips   |      | 10.5.217.6767 (Windows) | -O3
+CacheInstrucoes_UC | CacheInstrucoes_UC_Arc | fmips   |      | 10.5.217.6767 (Windows) | -O3
+-------------------------------------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------------------------------
-VHDL Package                                  | Library | Info | Compiler Version        | Compilation Options
----------------------------------------------------------------------------------------------------------------
-standard                                      | std     |      |                         | <unavailable>
-TEXTIO                                        | std     |      |                         | <unavailable>
-std_logic_1164                                | ieee    |      |                         | <unavailable>
-std_logic_arith                               | ieee    |      |                         | <unavailable>
-STD_LOGIC_UNSIGNED                            | ieee    |      |                         | <unavailable>
-STD_LOGIC_TEXTIO                              | ieee    |      |                         | <unavailable>
-NUMERIC_STD                                   | ieee    |      |                         | <unavailable>
----------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+VHDL Package                                | Library | Info | Compiler Version        | Compilation Options
+-------------------------------------------------------------------------------------------------------------
+standard                                    | std     |      |                         | <unavailable>
+TEXTIO                                      | std     |      |                         | <unavailable>
+std_logic_1164                              | ieee    |      |                         | <unavailable>
+std_logic_arith                             | ieee    |      |                         | <unavailable>
+STD_LOGIC_UNSIGNED                          | ieee    |      |                         | <unavailable>
+NUMERIC_STD                                 | ieee    |      |                         | <unavailable>
+STD_LOGIC_TEXTIO                            | ieee    |      |                         | <unavailable>
+-------------------------------------------------------------------------------------------------------------
 
----------------------------------------------------------------------------------------------------------------
-Library                                       | Comment
----------------------------------------------------------------------------------------------------------------
-fmips                                         | None
-ieee                                          | Standard IEEE packages library
-std                                           | Standard VHDL library
----------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
+Library                                     | Comment
+-------------------------------------------------------------------------------------------------------------
+fmips                                       | None
+ieee                                        | Standard IEEE packages library
+std                                         | Standard VHDL library
+-------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+CacheInstrucoes_TB CacheInstrucoes_TB CacheInstrucoes_TB_arc
+
+
+The performance of simulation is reduced. Version Student Edition

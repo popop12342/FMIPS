@@ -1,8 +1,13 @@
-154
-~E 1 "./../src/CacheInstrucoes.vhd" 8 CacheInstrucoes
-~A 1 "./../src/CacheInstrucoes.vhd" 18 CacheInstrucoesArc
+267
+~E 1 "./../src/CacheInstrucoes.vhd" 6 CacheInstrucoes
+~A 1 "./../src/CacheInstrucoes.vhd" 19 CacheInstrucoes_Arc
+~A 1 "./../src/CacheInstrucoes_FD.vhd" 17 cacheinstrucoesarc
+~E 1 "./../src/CacheInstrucoes_FD.vhd" 9 CacheInstrucoes_FD
+~A 1 "./../src/CacheInstrucoes_FD.vhd" 20 CacheInstrucoesArc
 ~E 1 "./../src/CacheInstrucoes_TB.vhd" 9 CacheInstrucoes_TB
 ~A 1 "./../src/CacheInstrucoes_TB.vhd" 12 CacheInstrucoes_TB_arc
+~E 1 "./../src/CacheInstrucoes_UC.vhd" 6 CacheInstrucoes_UC
+~A 1 "./../src/CacheInstrucoes_UC.vhd" 21 CacheInstrucoes_UC_Arc
 ~E 1 "./../src/MemoriaPrincipal.vhd" 8 MemoriaPrincipal
 ~A 1 "./../src/MemoriaPrincipal.vhd" 19 behavioral
 ~E 1 "./../src/MemoriaPrincipal_TB.vhd" 5 MemoriaPrincipal_TB

@@ -1,33 +1,77 @@
--- Projeto FMIP, Hierarquia de Memoria, Cache de Instrucoes
--- Felipe Pinna
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
--- Cache de Instrucoes
 entity CacheInstrucoes is
-	port (
-	ender     : in std_logic_vector(31 downto 0);
-	dados_out : out std_logic_vector(31 downto 0);
+	port(			   
 	clock     : in std_logic;
+	ender     : in std_logic_vector(31 downto 0);
+	dadosMP   : in std_logic_vector(31 downto 0);
+	pronto    : in std_logic;
+	enderMP   : out std_logic_vector(31 downto 0);
+	enableMP  : out std_logic;
+	dados_out : out std_logic_vector(31 downto 0);
 	hit       : out std_logic
 	);
-end CacheInstrucoes;
+end CacheInstrucoes;	
 
-architecture CacheInstrucoesArc of CacheInstrucoes is
--- define o tipo da memoria
-type mem_array is array(0 to 4095) of std_logic_vector(31 downto 0); 
+architecture CacheInstrucoes_Arc of CacheInstrucoes is
 
-signal mem: mem_array := (others => x"FFFFFFFF");
+component CacheInstrucoes_FD
+	port (
+	ender: in std_logic_vector(31 downto 0);
+	dados_in : in std_logic_vector(31 downto 0);
+	rw : in std_logic;
+	clock : in std_logic;
+	dados_out: out std_logic_vector(31 downto 0);
+	hit: out std_logic						   
+	);
+end component;
 
-begin
-	process(clock)
-	begin			  
-		hit <= '0';
-		if (rising_edge(clock)) then
-			dados_out <= mem(to_integer(unsigned(ender)));	
-			hit <= '1';
-		end if;
-	end process;
-end CacheInstrucoesArc;
+component CacheInstrucoes_UC
+	port (
+	clock : in std_logic;
+	hit : in std_logic;
+	ender : in std_logic_vector(31 downto 0);
+	dadosMP : in std_logic_vector(31 downto 0);
+	pronto : in std_logic;
+	enderFD : out std_logic_vector(31 downto 0);
+	enderMP : out std_logic_vector(31 downto 0);
+	enableMP : out std_logic;
+	rw : out std_logic;
+	dados : out std_logic_vector(31 downto 0)
+	);
+end component;
+
+signal rw, h : std_logic;
+signal dados_in, enderFD : std_logic_vector(31 downto 0);
+
+begin		  
+	
+	-- Instancia do ICache
+	IC: CacheInstrucoes_FD port map (
+		ender => enderFD,
+		dados_in => dados_in,
+		rw => rw,
+		clock => clock,
+		dados_out => dados_out,	 
+		hit => h
+	);
+	
+	ICUC: CacheInstrucoes_UC port map(
+		clock => clock,
+		hit => h,
+		ender => ender,
+		dadosMP => dadosMP,
+		pronto => pronto,
+		enderFD => enderFD,
+		enderMP => enderMP,
+		enableMP => enableMP,
+		rw => rw,
+		dados => dados_in
+	);
+	
+	hit <= h;
+	
+end CacheInstrucoes_Arc;

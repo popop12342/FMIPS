@@ -9,7 +9,7 @@ entity MemoriaPrincipal is
 	port(
 	ender: in std_logic_vector(31 downto 0);
 	dados_in: in std_logic_vector(31 downto 0);
-	dados_out : out std_logic_vector(31 downto 0);
+	dados_out : out std_logic_vector(31 downto 0); -- Talvez depois fazer um unico pino de inout para dados
 	rw: in std_logic;
 	enable: in std_logic;
 	pronto: out std_logic
@@ -18,7 +18,7 @@ end MemoriaPrincipal;
 
 architecture behavioral of MemoriaPrincipal is
 
-type mem_array is array(0 to 2**14-1) of std_logic_vector(7 downto 0);
+type mem_array is array(0 to 2**16-1) of std_logic_vector(7 downto 0);
 
 -- inicializa a memoria com um arquivo txt
 impure function initMem (filename: in string) return mem_array is
@@ -57,10 +57,10 @@ begin
 	variable pos : integer;
 	variable b1, b2, b3, b4 : std_logic_vector(7 downto 0);
 	begin
-		if enable = '1' then 
+		if enable = '1' then
 			pos := to_integer(unsigned(ender));
 			case rw is
-				when '0' => -- Leitura					 
+				when '0' => -- Leitura
 					b1 := mem(pos);
 					b2 := mem(pos + 1);
 					b3 := mem(pos + 2);

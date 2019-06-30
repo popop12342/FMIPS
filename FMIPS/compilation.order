@@ -1,4 +1,6 @@
-.\src\CacheInstrucoes.vhd
+.\src\CacheInstrucoes_FD.vhd
 .\src\CacheInstrucoes_TB.vhd
 .\src\MemoriaPrincipal.vhd
 .\src\MemoriaPrincipal_TB.vhd
+.\src\CacheInstrucoes_UC.vhd
+.\src\CacheInstrucoes.vhd
