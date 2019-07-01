@@ -58,6 +58,10 @@ Selected=
 /CacheInstrucoes.vhd=-1
 /CacheInstrucoes_teste.asdb=-1
 /CacheInstrucoes_teste.awc=-1
+/CacheDados_FD.vhd=-1
+/CacheDados_TB.vhd=-1
+/CacheDados_UC.vhd=-1
+/WriteBuffer.vhd=-1
 
 [Files.Data]
 .\src\CacheInstrucoes_FD.vhd=VHDL Source Code
@@ -71,3 +75,7 @@ Selected=
 .\src\CacheInstrucoes.vhd=VHDL Source Code
 .\src\CacheInstrucoes_teste.asdb=Accelerated Waveform File
 .\src\CacheInstrucoes_teste.awc=Accelerated Waveform Configuration
+.\src\CacheDados_FD.vhd=VHDL Source Code
+.\src\CacheDados_TB.vhd=VHDL Source Code
+.\src\CacheDados_UC.vhd=VHDL Source Code
+.\src\WriteBuffer.vhd=VHDL Source Code

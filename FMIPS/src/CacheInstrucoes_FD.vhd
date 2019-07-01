@@ -23,9 +23,10 @@ type dados_array is array(0 to 255, 0 to 15) of std_logic_vector(31 downto 0);
 type v_array is array(0 to 255) of std_logic;
 type tag_array is array(0 to 255) of std_logic_vector(16 downto 0);
 
-signal dados_cache : dados_array := (others => (x"00000000", x"11111111", x"22222222", x"33333333", x"44444444", x"55555555", x"66666666", x"77777777", x"88888888", x"99999999", x"AAAAAAAA", x"BBBBBBBB", x"CCCCCCCC", x"DDDDDDDD", x"EEEEEEEE", x"FFFFFFFF"));
+-- Tirar essa inicializacao para inciar o cache vazio
+signal dados_cache : dados_array:= (others => (x"00000000", x"11111111", x"22222222", x"33333333", x"44444444", x"55555555", x"66666666", x"77777777", x"88888888", x"99999999", x"AAAAAAAA", x"BBBBBBBB", x"CCCCCCCC", x"DDDDDDDD", x"EEEEEEEE", x"FFFFFFFF"));
 signal v_cache : v_array := (others => '1');
-signal tag_cache : tag_array := (others => '0' & x"0000");
+signal tag_cache : tag_array:= (others => '0' & x"0000");
 
 signal tag : integer;
 signal index_bloco : integer range 0 to 255;

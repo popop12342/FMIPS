@@ -4,3 +4,7 @@
 .\src\MemoriaPrincipal_TB.vhd
 .\src\CacheInstrucoes_UC.vhd
 .\src\CacheInstrucoes.vhd
+.\src\CacheDados_FD.vhd
+.\src\CacheDados_TB.vhd
+.\src\CacheDados_UC.vhd
+.\src\WriteBuffer.vhd

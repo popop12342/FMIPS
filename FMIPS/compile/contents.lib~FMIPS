@@ -1,4 +1,10 @@
-267
+305
+~E 1 "./../src/CacheDados_FD.vhd" 6 CacheDados_FD
+~A 1 "./../src/CacheDados_FD.vhd" 19 CacheDados_FD_Arc
+~E 1 "./../src/CacheDados_TB.vhd" 6 CacheDados_TB
+~A 1 "./../src/CacheDados_TB.vhd" 9 CacheDados_TB_Arc
+~E 1 "./../src/CacheDados_UC.vhd" 6 CacheDados_UC
+~A 1 "./../src/CacheDados_UC.vhd" 25 CacheDados_UC_Arc
 ~E 1 "./../src/CacheInstrucoes.vhd" 6 CacheInstrucoes
 ~A 1 "./../src/CacheInstrucoes.vhd" 19 CacheInstrucoes_Arc
 ~A 1 "./../src/CacheInstrucoes_FD.vhd" 17 cacheinstrucoesarc

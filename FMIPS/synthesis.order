@@ -3,3 +3,7 @@ i<>.\src\CacheInstrucoes_TB.vhd
 i<>.\src\MemoriaPrincipal.vhd
 i<>.\src\MemoriaPrincipal_TB.vhd
 i<>.\src\CacheInstrucoes_UC.vhd
+i<>.\src\CacheDados_FD.vhd
+i<>.\src\CacheDados_TB.vhd
+i<>.\src\CacheDados_UC.vhd
+i<>.\src\WriteBuffer.vhd

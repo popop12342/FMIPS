@@ -29,7 +29,8 @@ begin
 	variable last_ender, pos_bloco : std_logic_vector(31 downto 0);
 	variable tag : integer;
 	variable index_bloco : integer range 0 to 255;
-	begin
+	begin 
+		wait for 0 ns;
 		enderFD <= ender;
 		rw <= '0';
 		wait until rising_edge(clock);					
