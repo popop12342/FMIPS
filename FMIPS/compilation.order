@@ -8,3 +8,4 @@
 .\src\CacheDados_TB.vhd
 .\src\CacheDados_UC.vhd
 .\src\WriteBuffer.vhd
+.\src\CacheDados.vhd

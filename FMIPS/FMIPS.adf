@@ -43,7 +43,7 @@ tbs=1
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=cacheinstrucoes_tb|CacheInstrucoes_TB_arc|0 memoriaprincipal_tb|MemoriaPrincipal_TB_arc|0
+HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
 
@@ -62,6 +62,7 @@ Selected=
 /CacheDados_TB.vhd=-1
 /CacheDados_UC.vhd=-1
 /WriteBuffer.vhd=-1
+/CacheDados.vhd=-1
 
 [Files.Data]
 .\src\CacheInstrucoes_FD.vhd=VHDL Source Code
@@ -79,3 +80,4 @@ Selected=
 .\src\CacheDados_TB.vhd=VHDL Source Code
 .\src\CacheDados_UC.vhd=VHDL Source Code
 .\src\WriteBuffer.vhd=VHDL Source Code
+.\src\CacheDados.vhd=VHDL Source Code

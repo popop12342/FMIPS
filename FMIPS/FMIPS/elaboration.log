@@ -1,40 +1,9 @@
-Active-HDL 10.5.217.6767 2019-06-30 20:17:25
+Active-HDL 10.5.217.6767 2019-07-01 15:07:41
 
 Elaboration top modules:
-Architecture                  CacheDados_TB_Arc(CacheDados_TB)
 
 
-------------------------------------------------------------------------------------------------------
-Entity           | Architecture      | Library | Info | Compiler Version        | Compilation Options
-------------------------------------------------------------------------------------------------------
-CacheDados_TB    | CacheDados_TB_Arc | fmips   |      | 10.5.217.6767 (Windows) | -O3
-CacheDados_FD    | CacheDados_FD_Arc | fmips   |      | 10.5.217.6767 (Windows) | -O3
-CacheDados_UC    | CacheDados_UC_Arc | fmips   |      | 10.5.217.6767 (Windows) | -O3
-MemoriaPrincipal | behavioral        | fmips   |      | 10.5.217.6767 (Windows) | -O3
-------------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------------------------
-VHDL Package                         | Library | Info | Compiler Version        | Compilation Options
-------------------------------------------------------------------------------------------------------
-standard                             | std     |      |                         | <unavailable>
-TEXTIO                               | std     |      |                         | <unavailable>
-std_logic_1164                       | ieee    |      |                         | <unavailable>
-std_logic_arith                      | ieee    |      |                         | <unavailable>
-STD_LOGIC_UNSIGNED                   | ieee    |      |                         | <unavailable>
-NUMERIC_STD                          | ieee    |      |                         | <unavailable>
-STD_LOGIC_TEXTIO                     | ieee    |      |                         | <unavailable>
-------------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------------------------
-Library                              | Comment
-------------------------------------------------------------------------------------------------------
-fmips                                | None
-ieee                                 | Standard IEEE packages library
-std                                  | Standard VHDL library
-------------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+CacheDados_TB CacheDados_TB CacheDados_TB_Arc
-
-
-The performance of simulation is reduced. Version Student Edition
+----------------------------------------------------------------------------------
+Library                 | Comment
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
