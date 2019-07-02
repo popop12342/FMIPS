@@ -1,123 +1,145 @@
-timestamp=1562004862869
+timestamp=1562038636390
 
 [~A]
-ModifyID=307
+ModifyID=325
 Version=74
 
+[cachedados]
+A/cachedados_arc=A/CacheDados_Arc 21|./../src/CacheDados.vhd|22|1*3652712
+BinI32/cachedados_arc=3*742703
+I=0*674760
+I/cachedados_arc=I/CacheDados_Arc 0*705430
+M=11|0|vde|1562033396784|./../src/CacheDados.vhd|0*674079*0xf00d4096afeda5378201817ea6a6c709c778bbe1|0*674673*0x23b75c12e3e89f2ef000564498faa8c2
+M/cachedados_arc=M/CacheDados_Arc 21|0|vde|1562038636315|./../src/CacheDados.vhd|0*703973*0x6cb4366cd4fc23f6c66c039c41dc771c2a6dfd5d|0*705325*0x20116f55b147878295aeff36dce7fc50
+R=./../src/CacheDados.vhd|6
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|f0cb1299f1455af5e1a1bf2ba030e840c476e1a897af67686b37bacca9e07ac2354c6dafad684dc8f983fb74b2fff4cb
+Version/cachedados_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|1507f72046c2f9f2fa52fe86ee0051640100788097254e37a2327fe5f2ab2af10b70880de0ea37139599055a35a696a8
+
 [cachedados_fd]
-A/cachedados_fd_arc=A/CacheDados_FD_Arc 21|./../src/CacheDados_FD.vhd|19|1*3103545
-BinI32/cachedados_fd_arc=3*651760
-I=0*569875
-I/cachedados_fd_arc=I/CacheDados_FD_Arc 0*646196
-M=11|0|vde|1561930283794|./../src/CacheDados_FD.vhd|0*569319*0xa549ed817dbd72db66ae4eb8499d7d18d4bcfee4|0*569782*0x23b75c12e3e89f2ef000564498faa8c2
-M/cachedados_fd_arc=M/CacheDados_FD_Arc 21|0|vde|1562004862667|./../src/CacheDados_FD.vhd|0*638881*0x04388f48c8739ab91f6193f84aef35b89d2b6265|0*642882*0x20116f55b147878295aeff36dce7fc50
+A/cachedados_fd_arc=+21|./../src/CacheDados_FD.vhd|19|1*3444387
+I=0*680438
+M=11|0|vde|1562037854390|./../src/CacheDados_FD.vhd|0*679808*0xa3f27791fc6940cc692c965de93a8027ba7da779|0*680345*0x23b75c12e3e89f2ef000564498faa8c2
+M/cachedados_fd_arc=M/CacheDados_FD_Arc 21|0|vde|1562033396571|./../src/CacheDados_FD.vhd|0*638881*0x04388f48c8739ab91f6193f84aef35b89d2b6265|0*642882*0x20116f55b147878295aeff36dce7fc50
 R=./../src/CacheDados_FD.vhd|6
-Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|37c9830a158280fec19c8ee4cdbe6aba9347d352a55080cfe95ac563ad1fe721bbc829de3d9e7223045f2cce4eaa7ac9
-Version/cachedados_fd_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|37c9830a158280fec19c8ee4cdbe6aba31d05b2be5168228e64ffbf2a584fab03a55a60fb9204d08b9338e92bc0232f4
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|37c9830a158280fec19c8ee4cdbe6aba9347d352a55080cfe95ac563ad1fe721326766dcba8854926e8aa42482434390
+Version/cachedados_fd_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|37c9830a158280fec19c8ee4cdbe6aba31d05b2be5168228e64ffbf2a584fab02288d1f289927b89e2996bb33c20fdac
 
 [cachedados_tb]
-A/cachedados_tb_arc=A/CacheDados_TB_Arc 21|./../src/CacheDados_TB.vhd|9|1*3118949
-BinI32/cachedados_tb_arc=3*653444
+A/cachedados_tb_arc=A/CacheDados_TB_Arc 21|./../src/CacheDados_TB.vhd|9|1*3647601
+BinI32/cachedados_tb_arc=3*741709
 I=0*506071
-I/cachedados_tb_arc=I/CacheDados_TB_Arc 0*646460
+I/cachedados_tb_arc=I/CacheDados_TB_Arc 0*701830
 M=11|0|vde|1561925784853|./../src/CacheDados_TB.vhd|0*505762*0xee5f70aab89df75639f4223fe1cdf7f345b3db71|0*505978*0x23b75c12e3e89f2ef000564498faa8c2
-M/cachedados_tb_arc=M/CacheDados_TB_Arc 21|0|vde|1562004862726|./../src/CacheDados_TB.vhd|0*633634*0xa60e1dd581211bff1fc59deb4ca36f03360df270|0*636170*0x20116f55b147878295aeff36dce7fc50
+M/cachedados_tb_arc=M/CacheDados_TB_Arc 21|0|vde|1562038304256|./../src/CacheDados_TB.vhd|0*699480*0xac8e0bb9ae0e92a6e7226113d8e65fbe4c7c394a|0*701716*0x20116f55b147878295aeff36dce7fc50
 R=./../src/CacheDados_TB.vhd|6
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|284ee7ee18641808687ea4fd89d12525b9434022919b71572833e4bb7c7d689ad0a7fe9fffd7294fb726e73822ee7f06
-Version/cachedados_tb_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|284ee7ee18641808687ea4fd89d12525b4170d2eb019d4b79a67c1c79d85cffd27466f476bdd0597d80f0d5aa8ebf4c3
+Version/cachedados_tb_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|284ee7ee18641808687ea4fd89d12525b4170d2eb019d4b79a67c1c79d85cffd73e63a04a63e14d121353a62b79b763d
 
 [cachedados_uc]
-A/cachedados_uc_arc=A/CacheDados_UC_Arc 21|./../src/CacheDados_UC.vhd|25|1*3123801
-BinI32/cachedados_uc_arc=3*654017
-I=0*575405
-I/cachedados_uc_arc=I/CacheDados_UC_Arc 0*646869
-M=11|0|vde|1561930412906|./../src/CacheDados_UC.vhd|0*574635*0x7493e56c267f384d6f71fa861f114f99d4931d8c|0*575312*0x23b75c12e3e89f2ef000564498faa8c2
-M/cachedados_uc_arc=M/CacheDados_UC_Arc 21|0|vde|1562004862776|./../src/CacheDados_UC.vhd|0*632033*0x3870c7c50d9de102b341da09918fc06671b4eb37|0*633181*0x20116f55b147878295aeff36dce7fc50
+A/cachedados_uc_arc=A/CacheDados_UC_Arc 21|./../src/CacheDados_UC.vhd|31|1*3644887
+BinI32/cachedados_uc_arc=3*740299
+I=0*697160
+I/cachedados_uc_arc=I/CacheDados_UC_Arc 0*699141
+M=11|0|vde|1562038236401|./../src/CacheDados_UC.vhd|0*696175*0x1b76cc5c3ae3ffd884101aba4beff2262d7b101f|0*697067*0x23b75c12e3e89f2ef000564498faa8c2
+M/cachedados_uc_arc=M/CacheDados_UC_Arc 21|0|vde|1562038236408|./../src/CacheDados_UC.vhd|0*697481*0xa448ce116a295004acf219e291f274a787a3aeb6|0*699027*0x20116f55b147878295aeff36dce7fc50
 R=./../src/CacheDados_UC.vhd|6
-Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|3c97310161c2de82f7ffa2dcdf668b7f21e44a6c7d5e4100961aec5a8ad8bf51525a21f230ebdad80c2d100c8033db3b
-Version/cachedados_uc_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|3c97310161c2de82f7ffa2dcdf668b7fc51bc24a03d6cd3697da98d85303ed3b499f84d71ca6d69af5929d49097c1e9e
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|3c97310161c2de82f7ffa2dcdf668b7f21e44a6c7d5e4100961aec5a8ad8bf5193afe20d566a97f7c1c50f269bedc024
+Version/cachedados_uc_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|3c97310161c2de82f7ffa2dcdf668b7fc51bc24a03d6cd3697da98d85303ed3b18d71bd5148ec72251d121d453da81e4
 
 [cacheinstrucoes]
-A/cacheinstrucoes_arc=A/CacheInstrucoes_Arc 21|./../src/CacheInstrucoes.vhd|19|1*3100644
+A/cacheinstrucoes_arc=A/CacheInstrucoes_Arc 21|./../src/CacheInstrucoes.vhd|19|1*3641986
 A/cacheinstrucoesarc=+21|./../src/CacheInstrucoes_FD.vhd|17|1*860596
-BinI32/cacheinstrucoes_arc=3*651576
+BinI32/cacheinstrucoes_arc=3*740115
 I=0*479052
-I/cacheinstrucoes_arc=I/CacheInstrucoes_Arc 0*645780
+I/cacheinstrucoes_arc=I/CacheInstrucoes_Arc 0*695441
 M=11|0|vde|1561918191879|./../src/CacheInstrucoes.vhd|0*478448*0xd65d92017bbff4bf02960f4e8fd555d5883c8520|0*478955*0x23b75c12e3e89f2ef000564498faa8c2
-M/cacheinstrucoes_arc=M/CacheInstrucoes_Arc 21|0|vde|1562004862625|./../src/CacheInstrucoes.vhd|0*481118*0x9bac0e200d3b4cd988f517dd8ce9bd2ec174da4d|0*482337*0x20116f55b147878295aeff36dce7fc50
+M/cacheinstrucoes_arc=M/CacheInstrucoes_Arc 21|0|vde|1562038236291|./../src/CacheInstrucoes.vhd|0*481118*0x9bac0e200d3b4cd988f517dd8ce9bd2ec174da4d|0*482337*0x20116f55b147878295aeff36dce7fc50
 M/cacheinstrucoesarc=M/CacheInstrucoesArc 21|0|vde|1561849376954|./../src/CacheInstrucoes_FD.vhd|0*283076*0x51a46fe70bf263493b597dd7302ba0399032f5e1|0*284554*0x20116f55b147878295aeff36dce7fc50
 R=./../src/CacheInstrucoes.vhd|6
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcb7f77fbf50fb9b46fc7247ff0408e4ca9f54fceb0d470ce8d1351783a8ca4983b
-Version/cacheinstrucoes_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcba98ef35dcd65e7ce0f9af72b8a7799bdb073bbb46a657c6c307e0a36f92734b0
+Version/cacheinstrucoes_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcba98ef35dcd65e7ce0f9af72b8a7799bdbc75d1e0845f9ecfe7473058bbdc9fa8
 Version/cacheinstrucoesarc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcbb26c6ed3c47e1f9492e955df7492b8ccf3113ac955e8706a7f6f4c66dd1375d8
 
 [cacheinstrucoes_fd]
-A/cacheinstrucoesarc=A/CacheInstrucoesArc 21|./../src/CacheInstrucoes_FD.vhd|20|1*3078110
-BinI32/cacheinstrucoesarc=3*647282
+A/cacheinstrucoesarc=A/CacheInstrucoesArc 21|./../src/CacheInstrucoes_FD.vhd|20|1*3619452
+BinI32/cacheinstrucoesarc=3*735821
 I=0*394339
-I/cacheinstrucoesarc=I/CacheInstrucoesArc 0*644008
+I/cacheinstrucoesarc=I/CacheInstrucoesArc 0*693669
 M=11|0|vde|1561903457901|./../src/CacheInstrucoes_FD.vhd|0*393818*0x193c38b9dc85b8dd6ce854074a7a96e23bedfb5e|0*394236*0x23b75c12e3e89f2ef000564498faa8c2
-M/cacheinstrucoesarc=M/CacheInstrucoesArc 21|0|vde|1562004862343|./../src/CacheInstrucoes_FD.vhd|0*603337*0x1e2d4dbd432deb795f128cc4be197976084a179a|0*605351*0x20116f55b147878295aeff36dce7fc50
+M/cacheinstrucoesarc=M/CacheInstrucoesArc 21|0|vde|1562038235942|./../src/CacheInstrucoes_FD.vhd|0*603337*0x1e2d4dbd432deb795f128cc4be197976084a179a|0*605351*0x20116f55b147878295aeff36dce7fc50
 R=./../src/CacheInstrucoes_FD.vhd|9
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcb6a349729432bbc861f7020c181b2d94570853885bc0ea00c37e542f99957a5f3
-Version/cacheinstrucoesarc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcbb26c6ed3c47e1f9492e955df7492b8cc43a080f6e6c6743decc1232f0858644e
+Version/cacheinstrucoesarc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcbb26c6ed3c47e1f9492e955df7492b8cc1fe75e7e31942896f75872c79dbfba19
 
 [cacheinstrucoes_tb]
-A/cacheinstrucoes_tb_arc=A/CacheInstrucoes_TB_arc 21|./../src/CacheInstrucoes_TB.vhd|12|1*3091186
-BinI32/cacheinstrucoes_tb_arc=3*648439
+A/cacheinstrucoes_tb_arc=A/CacheInstrucoes_TB_arc 21|./../src/CacheInstrucoes_TB.vhd|12|1*3632528
+BinI32/cacheinstrucoes_tb_arc=3*736978
 I=0*2171
-I/cacheinstrucoes_tb_arc=I/CacheInstrucoes_TB_arc 0*644278
+I/cacheinstrucoes_tb_arc=I/CacheInstrucoes_TB_arc 0*693939
 M=11|0|vde|1559395041823|./../src/CacheInstrucoes_TB.vhd|0*1832*0x6fe6fd5d6fde40eea49b803f42b31efae63e652e|0*2068*0x23b75c12e3e89f2ef000564498faa8c2
-M/cacheinstrucoes_tb_arc=M/CacheInstrucoes_TB_arc 21|0|vde|1562004862427|./../src/CacheInstrucoes_TB.vhd|0*623475*0xd82c0720ec3872d76c592a523e6d86490f0527e9|0*625036*0x20116f55b147878295aeff36dce7fc50
+M/cacheinstrucoes_tb_arc=M/CacheInstrucoes_TB_arc 21|0|vde|1562038236040|./../src/CacheInstrucoes_TB.vhd|0*623475*0xd82c0720ec3872d76c592a523e6d86490f0527e9|0*625036*0x20116f55b147878295aeff36dce7fc50
 R=./../src/CacheInstrucoes_TB.vhd|9
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcb014e6e32ef4fa5b1ed7b5b6ae3d3ca1f6a5bf65446be972b93dafe03ef111127
-Version/cacheinstrucoes_tb_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcb792b898fe416d053c8a83c7c593b2751cddcb3311f2d13aee25af2fc943b8a30
+Version/cacheinstrucoes_tb_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcb792b898fe416d053c8a83c7c593b2751c011b29b7199437e6c98673d400894ca
 
 [cacheinstrucoes_uc]
-A/cacheinstrucoes_uc_arc=A/CacheInstrucoes_UC_Arc 21|./../src/CacheInstrucoes_UC.vhd|21|1*3098668
-BinI32/cacheinstrucoes_uc_arc=3*650623
+A/cacheinstrucoes_uc_arc=A/CacheInstrucoes_UC_Arc 21|./../src/CacheInstrucoes_UC.vhd|21|1*3640010
+BinI32/cacheinstrucoes_uc_arc=3*739162
 I=0*466105
-I/cacheinstrucoes_uc_arc=I/CacheInstrucoes_UC_Arc 0*645431
+I/cacheinstrucoes_uc_arc=I/CacheInstrucoes_UC_Arc 0*695092
 M=11|0|vde|1561909222826|./../src/CacheInstrucoes_UC.vhd|0*465428*0x1ea3e08278192d3b01473dc5a6d6cae1985dc018|0*466002*0x23b75c12e3e89f2ef000564498faa8c2
-M/cacheinstrucoes_uc_arc=M/CacheInstrucoes_UC_Arc 21|0|vde|1562004862575|./../src/CacheInstrucoes_UC.vhd|0*626318*0x5bc2411072515100dca8948a0888b0f06f1196ad|0*627266*0x20116f55b147878295aeff36dce7fc50
+M/cacheinstrucoes_uc_arc=M/CacheInstrucoes_UC_Arc 21|0|vde|1562038236239|./../src/CacheInstrucoes_UC.vhd|0*626318*0x5bc2411072515100dca8948a0888b0f06f1196ad|0*627266*0x20116f55b147878295aeff36dce7fc50
 R=./../src/CacheInstrucoes_UC.vhd|6
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcbd5179d1307372473ccd5ed2a17899cc3328201e33ccdd1e6e692cce0fe87e404
-Version/cacheinstrucoes_uc_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcb87f3eb9b861092b1ea857eb69beb9a2f34a82b84c9ee8fc8ce408df55324c0dc
+Version/cacheinstrucoes_uc_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|e17ac93835738fde7a99fd6b682aabcb87f3eb9b861092b1ea857eb69beb9a2f2e8e4898e4f1ad20e69a0b0931135fb9
 
 [memoriaprincipal]
-A/behavioral=21|./../src/MemoriaPrincipal.vhd|19|1*3094309
-BinI32/behavioral=3*648896
+A/behavioral=21|./../src/MemoriaPrincipal.vhd|19|1*3635651
+BinI32/behavioral=3*737435
 I=0*461047
-I/behavioral=0*644675
+I/behavioral=0*694336
 M=11|0|vde|1561909222658|./../src/MemoriaPrincipal.vhd|0*460450*0xeafe833aae935d5d7c1b331d01155814f4122172|0*460948*0x23b75c12e3e89f2ef000564498faa8c2
-M/behavioral=21|0|vde|1562004862481|./../src/MemoriaPrincipal.vhd|0*461399*0x5aafeda424e42abfbb7d1e4febe8866814ed14bc|0*463041*0x20116f55b147878295aeff36dce7fc50
+M/behavioral=21|0|vde|1562038236113|./../src/MemoriaPrincipal.vhd|0*461399*0x5aafeda424e42abfbb7d1e4febe8866814ed14bc|0*463041*0x20116f55b147878295aeff36dce7fc50
 R=./../src/MemoriaPrincipal.vhd|8
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|43a6b3be1289439ddc45dada1c23c96ffe8e3b71131eed5c025fad82c558a49e2aa37d0b06aea21e64141e7ec564892f
-Version/behavioral=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff43feeb41b25bb427849c377d49f95edbf
+Version/behavioral=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4e21b7be87233ac7c0f3a42cbfb26b815
 
 [memoriaprincipal_tb]
-A/memoriaprincipal_tb_arc=A/MemoriaPrincipal_TB_arc 21|./../src/MemoriaPrincipal_TB.vhd|8|1*3096654
-BinI32/memoriaprincipal_tb_arc=3*650187
+A/memoriaprincipal_tb_arc=A/MemoriaPrincipal_TB_arc 21|./../src/MemoriaPrincipal_TB.vhd|8|1*3637996
+BinI32/memoriaprincipal_tb_arc=3*738726
 I=0*9325
-I/memoriaprincipal_tb_arc=I/MemoriaPrincipal_TB_arc 0*645071
+I/memoriaprincipal_tb_arc=I/MemoriaPrincipal_TB_arc 0*694732
 M=11|0|vde|1559487241284|./../src/MemoriaPrincipal_TB.vhd|0*8980*0xb9d68e6ff39e240a8b4ea3162e1f4d3987ac0da3|0*9220*0x23b75c12e3e89f2ef000564498faa8c2
-M/memoriaprincipal_tb_arc=M/MemoriaPrincipal_TB_arc 21|0|vde|1562004862531|./../src/MemoriaPrincipal_TB.vhd|0*463550*0x1beb4acb3f57fe670bd52b472fc01ca173987c78|0*464667*0x20116f55b147878295aeff36dce7fc50
+M/memoriaprincipal_tb_arc=M/MemoriaPrincipal_TB_arc 21|0|vde|1562038236187|./../src/MemoriaPrincipal_TB.vhd|0*463550*0x1beb4acb3f57fe670bd52b472fc01ca173987c78|0*464667*0x20116f55b147878295aeff36dce7fc50
 R=./../src/MemoriaPrincipal_TB.vhd|5
 Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|43a6b3be1289439ddc45dada1c23c96fcf7a253d860b1fadf3b39a0b20c9332ae545a3c9c6907dfc981f5d56befddb8b
-Version/memoriaprincipal_tb_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|43a6b3be1289439ddc45dada1c23c96f3fa6f5dbdd6c238cc972029a4740996d26527262ddaa47cb266f3a3c4d9b973a79823a0620328d1168b6d762aa4947a1
+Version/memoriaprincipal_tb_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|43a6b3be1289439ddc45dada1c23c96f3fa6f5dbdd6c238cc972029a4740996d26527262ddaa47cb266f3a3c4d9b973a94c9f2015b5c8e4414756969b376d31c
+
+[writebuffer]
+A/writebuffer_arc=A/WriteBuffer_Arc 21|./../src/WriteBuffer.vhd|17|1*3651618
+BinI32/writebuffer_arc=3*742282
+I=0*702967
+I/writebuffer_arc=I/WriteBuffer_Arc 0*703713
+M=11|0|vde|1562038399571|./../src/WriteBuffer.vhd|0*702459*0xe48541c798a7634eff17d6da5b1bdba9a100fa03|0*702878*0x23b75c12e3e89f2ef000564498faa8c2
+M/writebuffer_arc=M/WriteBuffer_Arc 21|0|vde|1562038582622|./../src/WriteBuffer.vhd|0*703211*0x999bc57b068e09eb3dc0115e0e377c244be404c5|0*703605*0x20116f55b147878295aeff36dce7fc50
+R=./../src/WriteBuffer.vhd|5
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|8d35fac58a2956322ba2e9983f41e51cb0c1e9b419b3bd65c56e1545efd65d5db2cc59bc66fb647cf2be6b31716b3bcd
+Version/writebuffer_arc=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|19c7ce4e2a0affc3d816825fce4d12d90b0349029a4653429c0b9a051818a89ebd1bc4c9f14771c4bb0831903ef39983
 
 [~MFT]
-0=18|0FMIPS.mgf|646869|615754
-1=18|1FMIPS.mgf|3123801|3026440
-3=18|3FMIPS.mgf|654017|647282
+0=8|0FMIPS.mgf|705430|669345
+1=2|1FMIPS.mgf|3652712|3552378
+3=2|3FMIPS.mgf|742703|735821
 
 [~U]
-cachedados_fd=CacheDados_FD 11|0*569068|
+cachedados=CacheDados 11|0*673814|
+cachedados_fd=CacheDados_FD 11|0*679540|
 cachedados_tb=CacheDados_TB 11|0*505630|
-cachedados_uc=CacheDados_UC 11|0*574353|
+cachedados_uc=CacheDados_UC 11|0*695857|
 cacheinstrucoes=CacheInstrucoes 11|0*478193|
 cacheinstrucoes_fd=CacheInstrucoes_FD 11|0*393571|
 cacheinstrucoes_tb=CacheInstrucoes_TB 11|0*1690|
 cacheinstrucoes_uc=CacheInstrucoes_UC 11|0*465159|
 memoriaprincipal=MemoriaPrincipal 11|0*460206|
 memoriaprincipal_tb=MemoriaPrincipal_TB 11|0*8836|
+writebuffer=WriteBuffer 11|0*702215|

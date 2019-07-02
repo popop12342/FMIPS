@@ -1,11 +1,2 @@
-"C:\Users\gabri\OneDrive\Documentos\GitHub\FMIPS\FMIPS\src\CacheInstrucoes_FD.vhd" VHDL FMIPS 1 0 0 -02
-"C:\Users\gabri\OneDrive\Documentos\GitHub\FMIPS\FMIPS\src\CacheInstrucoes_TB.vhd" VHDL FMIPS 1 0 0 -02
-"C:\Users\gabri\OneDrive\Documentos\GitHub\FMIPS\FMIPS\src\MemoriaPrincipal.vhd" VHDL FMIPS 1 0 0 -02
-"C:\Users\gabri\OneDrive\Documentos\GitHub\FMIPS\FMIPS\src\MemoriaPrincipal_TB.vhd" VHDL FMIPS 1 0 0 -02
-"C:\Users\gabri\OneDrive\Documentos\GitHub\FMIPS\FMIPS\src\CacheInstrucoes_UC.vhd" VHDL FMIPS 1 0 0 -02
-"C:\Users\gabri\OneDrive\Documentos\GitHub\FMIPS\FMIPS\src\CacheInstrucoes.vhd" VHDL FMIPS 1 0 0 -02
-"C:\Users\gabri\OneDrive\Documentos\GitHub\FMIPS\FMIPS\src\CacheDados_FD.vhd" VHDL FMIPS 1 0 0 -02
-"C:\Users\gabri\OneDrive\Documentos\GitHub\FMIPS\FMIPS\src\CacheDados_TB.vhd" VHDL FMIPS 1 0 0 -02
-"C:\Users\gabri\OneDrive\Documentos\GitHub\FMIPS\FMIPS\src\CacheDados_UC.vhd" VHDL FMIPS 1 0 0 -02
-"C:\Users\gabri\OneDrive\Documentos\GitHub\FMIPS\FMIPS\src\WriteBuffer.vhd" VHDL FMIPS 0 0 0 -02
+"c:\Users\gabri\OneDrive\Documentos\GitHub\FMIPS\FMIPS\src\CacheDados.vhd" VHDL FMIPS 1 0 0 -02
 . . 0 0 0

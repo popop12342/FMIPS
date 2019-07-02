@@ -1,10 +1,12 @@
-307
+325
+~E 1 "./../src/CacheDados.vhd" 6 CacheDados
+~A 1 "./../src/CacheDados.vhd" 22 CacheDados_Arc
 ~E 1 "./../src/CacheDados_FD.vhd" 6 CacheDados_FD
-~A 1 "./../src/CacheDados_FD.vhd" 19 CacheDados_FD_Arc
+~A 1 "./../src/CacheDados_FD.vhd" 19 cachedados_fd_arc
 ~E 1 "./../src/CacheDados_TB.vhd" 6 CacheDados_TB
 ~A 1 "./../src/CacheDados_TB.vhd" 9 CacheDados_TB_Arc
 ~E 1 "./../src/CacheDados_UC.vhd" 6 CacheDados_UC
-~A 1 "./../src/CacheDados_UC.vhd" 25 CacheDados_UC_Arc
+~A 1 "./../src/CacheDados_UC.vhd" 31 CacheDados_UC_Arc
 ~E 1 "./../src/CacheInstrucoes.vhd" 6 CacheInstrucoes
 ~A 1 "./../src/CacheInstrucoes.vhd" 19 CacheInstrucoes_Arc
 ~A 1 "./../src/CacheInstrucoes_FD.vhd" 17 cacheinstrucoesarc
@@ -18,3 +20,5 @@
 ~A 1 "./../src/MemoriaPrincipal.vhd" 19 behavioral
 ~E 1 "./../src/MemoriaPrincipal_TB.vhd" 5 MemoriaPrincipal_TB
 ~A 1 "./../src/MemoriaPrincipal_TB.vhd" 8 MemoriaPrincipal_TB_arc
+~E 1 "./../src/WriteBuffer.vhd" 5 WriteBuffer
+~A 1 "./../src/WriteBuffer.vhd" 17 WriteBuffer_Arc

@@ -68,22 +68,22 @@ begin
 	lru_out => lru
 	);
 	
-	CDUC : CacheDados_UC port map(
-	clock => clock,
-	hit => hit,
-	rw => rw,
-	lru => lru,
-	dados_in => dados_in,
-	ender => ender,
-	dadosMP => dadosMP,
-	pronto => pronto,
-	enderFD => enderFD,
-	enderMP => enderMP,
-	enableMP => enableMP,
-	rwFD => rwFD,
-	conjunto => conjunto,
-	dados => dadosFD
-	);
+	--CDUC : CacheDados_UC port map(
+--	clock => clock,
+--	hit => hit,
+--	rw => rw,
+--	lru => lru,
+--	dados_in => dados_in,
+--	ender => ender,
+--	dadosMP => dadosMP,
+--	pronto => pronto,
+--	enderFD => enderFD,
+--	enderMP => enderMP,
+--	enableMP => enableMP,
+--	rwFD => rwFD,
+--	conjunto => conjunto,
+--	dados => dadosFD
+--	);
 	
 	MP : MemoriaPrincipal port map(
 		ender => enderMP,

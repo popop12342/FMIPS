@@ -10,15 +10,21 @@ entity CacheDados_UC is
 	rw      : in std_logic;
 	lru     : in std_logic;
 	dados_in: in std_logic_vector(31 downto 0);
+	dados_inFD: in std_logic_vector(31 downto 0);
 	ender   : in std_logic_vector(31 downto 0);
 	dadosMP : in std_logic_vector(31 downto 0);
 	pronto  : in std_logic;
+	prontoBuffer  : in std_logic;
 	enderFD : out std_logic_vector(31 downto 0);
 	enderMP : out std_logic_vector(31 downto 0);
 	enableMP: out std_logic;
+	goBuffer: out std_logic;
 	rwFD    : out std_logic;
 	conjunto: out std_logic_vector(1 downto 0);
-	dados   : out std_logic_vector(31 downto 0)
+	dados   : out std_logic_vector(31 downto 0);
+	sujo1	  : in std_logic_vector(127 downto 0);
+	sujo2    : in std_logic_vector(127 downto 0);
+	dadosBuffer: out std_logic_vector(31 downto 0)
 	);
 end CacheDados_UC;
 
@@ -46,8 +52,20 @@ begin
 		tag := to_integer(unsigned(ender(31 downto 14)));
 		index_bloco := to_integer(unsigned(ender(13 downto 7)));
 		wait for Tcache;
-		if hit = '0' then -- Miss
-			for i in 0to 15 loop
+		if hit = '0' then -- Miss 
+			
+			for i in 0to 15 loop  
+				-- copia para buffer
+				pos_bloco := last_ender(31 downto 7) & "0000000";
+			   	enderMP <= pos_bloco + std_logic_vector(to_unsigned(4*i, ender'length)); -- Pede palavra para MP para ser escrito pelo buffer
+				goBuffer <= '1';
+				if (lru = '0' and sujo1(index_bloco) = '1') or (lru = '1' and sujo2(index_bloco) = '1') then 
+					wait until prontoBuffer = '1'; -- se ainda não tiver terminado de escrever o comando anterior
+					rwFD <= '0';
+			   		enderFD <= pos_bloco + std_logic_vector(to_unsigned(4*i, ender'length));
+			   		dadosBuffer <= dados_inFD after Tcache;				   		
+			   end if;	
+			   -- Busca da Memoria
 			   enableMP <= '1';
 			   pos_bloco := last_ender(31 downto 7) & "0000000";
 			   enderMP <= pos_bloco + std_logic_vector(to_unsigned(4*i, ender'length)); -- Pede palavra para MP
@@ -62,6 +80,7 @@ begin
 				   conjunto <= "10";
 			   end if;
 			   enableMP <= '0';
+			   goBuffer <= '0';
 			   wait for 5 ns;
 			end loop;
 			-- Repete acesso

@@ -12,7 +12,9 @@ entity CacheDados_FD is
 	conjunto  : in std_logic_vector(1 downto 0);
 	dados_out : out std_logic_vector(31 downto 0);
 	hit       : out std_logic;
-	lru_out   : out std_logic
+	lru_out   : out std_logic;
+	sujo1	  : out std_logic_vector(127 downto 0);
+	sujo2    : out std_logic_vector(127 downto 0)
 	);
 end CacheDados_FD;
 
@@ -92,6 +94,8 @@ begin
 				end if;
 			end if;
 		end if;
+		sujo1 <= dirty1;
+		sujo2 <= dirty2;
 	end process;
 	
 end CacheDados_FD_Arc;
