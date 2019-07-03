@@ -5,6 +5,7 @@ use ieee.numeric_std.all;
 entity WriteBuffer is
 	port (
 	dados_in  : in std_logic_vector(31 downto 0);
+	clock : in std_logic;
 	prontoMP	: in std_logic;
 	goBuffer	: in std_logic;
 	dados_out : out std_logic_vector(31 downto 0);
@@ -17,8 +18,9 @@ end WriteBuffer;
 architecture WriteBuffer_Arc of WriteBuffer is
 
 begin
-	process--(goBuffer)
-	begin
+	process--(clock,goBuffer)
+	begin		  
+		wait until rising_edge(clock);
 		-- Escrita na Memoria, contando com que o endereço tenha sido setado certo na UC
 		if goBuffer = '1' then
 			rwMP <= '1';
@@ -32,7 +34,7 @@ begin
 	
 		if goBuffer = '0' then
 			prontoBuffer <= '0';
-			dados_out <= (others => 'Z');
+			dados_out <= (others => 'Z'); 
 		end if;
 		
 	end process;

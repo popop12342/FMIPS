@@ -8,36 +8,44 @@ end CacheDados_TB;
 
 architecture CacheDados_TB_Arc of CacheDados_TB is
 
-component CacheDados_FD is
+component CacheDados is
 	port(
-	ender     : in std_logic_vector(31 downto 0);
-	dados_in  : in std_logic_vector(31 downto 0);
-	rw        : in std_logic; 
 	clock     : in std_logic;
-	conjunto  : in std_logic_vector(1 downto 0);
+	ender     : in std_logic_vector(31 downto 0);
+	rw        : in std_logic;
+	dados_in  : in std_logic_vector(31 downto 0);
+	hit       : out std_logic;
 	dados_out : out std_logic_vector(31 downto 0);
-	hit       : out std_logic;					
-	lru_out   : out std_logic
+	prontoMPBuffer : in std_logic;
+	enableMPBuffer : out std_logic;
+	enderMPBuffer  : out std_logic_vector(31 downto 0);
+	dadosMPBuffer  : out std_logic_vector(31 downto 0);
+	rwMPBuffer     : out std_logic;
+	prontoMPUC : in std_logic;
+	dadosMPUC  : in std_logic_vector(31 downto 0);
+	enderMPUC  : out std_logic_vector(31 downto 0);
+	enableMPUC : out std_logic
 	);
 end component;
 
-component CacheDados_UC is
+component MemDriver is
 	port(
-	clock   : in std_logic;
-	hit     : in std_logic;
-	rw      : in std_logic;
-	lru     : in std_logic;
-	dados_in: in std_logic_vector(31 downto 0);
-	ender   : in std_logic_vector(31 downto 0);
-	dadosMP : in std_logic_vector(31 downto 0);
-	pronto  : in std_logic;
-	enderFD : out std_logic_vector(31 downto 0);
-	enderMP : out std_logic_vector(31 downto 0);
-	enableMP: out std_logic;
-	rwFD    : out std_logic;
-	conjunto: out std_logic_vector(1 downto 0);
-	dados   : out std_logic_vector(31 downto 0)
-	);
+		 enableMPBuffer : in STD_LOGIC;
+		 enableMPUC : in STD_LOGIC;
+		 rwMPBuffer : in STD_LOGIC;
+		 enderMPUC : in STD_LOGIC_VECTOR(31 downto 0);
+		 enderMPBuffer : in STD_LOGIC_VECTOR(31 downto 0);
+		 dadosMPBuffer : in STD_LOGIC_VECTOR(31 downto 0);
+		 prontoMP : in STD_LOGIC;
+		 dados_outMP : in STD_LOGIC_VECTOR(31 downto 0);
+		 rwMP : out STD_LOGIC;
+		 enableMP : out STD_LOGIC;
+		 dados_inMP : out STD_LOGIC_VECTOR(31 downto 0);
+		 enderMP : out STD_LOGIC_VECTOR(31 downto 0);
+		 prontoMPBuffer : out STD_LOGIC;
+		 prontoMPUC : out STD_LOGIC;
+		 dadosMPUC : out STD_LOGIC_VECTOR(31 downto 0)
+	     );
 end component;
 
 component MemoriaPrincipal is
@@ -51,48 +59,56 @@ component MemoriaPrincipal is
 	);
 end component;
 
-signal ender, dados_in, dados_out, enderFD, dadosFD, dadosMP, enderMP : std_logic_vector(31 downto 0);
-signal rw, clock, hit, lru, rwFD, pronto, enableMP : std_logic;
-signal conjunto : std_logic_vector(1 downto 0);
+signal  ender, dados_in, dados_out, dadosMPBuffer, enderMPBuffer, dadosMPUC, enderMPUC, enderMP, dados_inMP, dados_outMP : std_logic_vector(31 downto 0);
+signal  clock, rw, hit, prontoMPBuffer, rwMPBuffer, enableMPBuffer, prontoMPUC, enableMPUC, rwMP, enableMP,prontoMP : std_logic;
 
 begin		  
 	
-	CDFD : CacheDados_FD port map(
-	ender => enderFD,
-	dados_in => dadosFD,
-	rw => rwFD,
-	clock => clock,						
-	conjunto => conjunto,
+	CD : Cachedados port map(
+	clock     => clock,
+	ender     => ender,
+	rw        => rw,
+	dados_in  => dados_in,
+	hit       => hit,
 	dados_out => dados_out,
-	hit => hit,			 
-	lru_out => lru
+	prontoMPBuffer => prontoMPBuffer,
+	enableMPBuffer => enableMPBuffer,
+	enderMPBuffer  => enderMPbuffer,
+	dadosMPBuffer  => dadosMPBuffer,
+	rwMPBuffer     => rwMPBuffer,
+	prontoMPUC => prontoMPUC,
+	dadosMPUC  => dadosMPUC,
+	enderMPUC  => enderMPUC,
+	enableMPUC => enableMPUC
 	);
 	
-	--CDUC : CacheDados_UC port map(
---	clock => clock,
---	hit => hit,
---	rw => rw,
---	lru => lru,
---	dados_in => dados_in,
---	ender => ender,
---	dadosMP => dadosMP,
---	pronto => pronto,
---	enderFD => enderFD,
---	enderMP => enderMP,
---	enableMP => enableMP,
---	rwFD => rwFD,
---	conjunto => conjunto,
---	dados => dadosFD
---	);
+	MD : MemDriver port map(
+		enableMPBuffer => enableMPBuffer,
+		 enableMPUC => enableMPUC,
+		 rwMPBuffer => rwMPBuffer,
+		 enderMPUC => enderMPUC,
+		 enderMPBuffer => enderMPBuffer,
+		 dadosMPBuffer => dadosMPBuffer,
+		 prontoMP => prontoMP,
+		 dados_outMP => dados_outMP,
+		 rwMP => rwMP,
+		 enableMP => enableMP,
+		 dados_inMP => dados_inMP,
+		 enderMP => enderMP,
+		 prontoMPBuffer => prontoMPBuffer,
+		 prontoMPUC => prontoMPUC,
+		 dadosMPUC => dadosMPUC
+	     );
 	
 	MP : MemoriaPrincipal port map(
 		ender => enderMP,
-		dados_in => x"00000000",
-		dados_out => dadosMP,
-		rw => '0',
+		dados_in => dados_inMP,
+		dados_out => dados_outMP,
+		rw => rwMP,
 		enable => enableMP,
-		pronto => pronto
+		pronto => prontoMP
 	);
+	
 	
 	Clock_process: process
 	begin
@@ -103,21 +119,33 @@ begin
 	end process;
 	
 	Data_process: process
-	begin		  
+	begin		  			 
 		ender <= x"00000000";
-		rw <= '0';
-		wait for 10 ns;
-		ender <= x"00000004"; -- primiero conjunto
-		wait for 10 ns;
-		ender <= x"00010004"; -- segundo conjunto
-		wait for 10 ns;
 		rw <= '1';
-		dados_in <= x"A0A0A0A0";
-		wait for 10 ns;
-		rw <= '0';
+		dados_in <= x"ABBAABBA";
 		wait for 10 ns;
 		ender <= x"00008000";
+		wait for 5 ns;
 		wait until hit = '1';
+		ender <= x"00004000";
+		wait until hit = '1';
+	--	ender <= x"00000000";
+--		rw <= '0';
+--		wait for 10 ns;
+--		rw <= '1';
+--		dados_in <= x"ABBAABBA";
+--		wait for 10 ns;
+--		ender <= x"00000008"; -- primiero conjunto
+--		wait for 10 ns;
+--		ender <= x"00010004"; -- segundo conjunto
+--		wait for 10 ns;
+--		rw <= '1';
+--		dados_in <= x"A0A0A0A0";
+--		wait for 10 ns;
+--		rw <= '0';
+--		wait for 10 ns;
+--		ender <= x"00008000";
+--		wait until hit = '1';
 	end process;
 	
 end CacheDados_TB_Arc;

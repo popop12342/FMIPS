@@ -8,3 +8,4 @@ i<>.\src\CacheDados_TB.vhd
 i<>.\src\CacheDados_UC.vhd
 i<>.\src\WriteBuffer.vhd
 i<>.\src\CacheDados.vhd
+i<>.\src\MemDriver.vhd

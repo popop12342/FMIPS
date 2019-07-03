@@ -1,2 +1,4 @@
 CacheInstrucoes_TB ENTITY
 MemoriaPrincipal_TB ENTITY
+CacheDados_TB ENTITY
+CacheDados ENTITY

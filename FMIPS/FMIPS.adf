@@ -43,7 +43,7 @@ tbs=1
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=
+HierarchyInformation=cachedados_tb|CacheDados_TB_Arc|0  
 ShowHide=ShowTopLevel
 Selected=
 
@@ -63,6 +63,10 @@ Selected=
 /CacheDados_UC.vhd=-1
 /WriteBuffer.vhd=-1
 /CacheDados.vhd=-1
+/HierarquiaMem.bde=-1
+/MemDriver.vhd=-1
+/Leitura_CacheDados.asdb=-1
+/Leitura_CacheDados.awc=-1
 
 [Files.Data]
 .\src\CacheInstrucoes_FD.vhd=VHDL Source Code
@@ -81,3 +85,7 @@ Selected=
 .\src\CacheDados_UC.vhd=VHDL Source Code
 .\src\WriteBuffer.vhd=VHDL Source Code
 .\src\CacheDados.vhd=VHDL Source Code
+.\src\HierarquiaMem.bde=Block Diagram
+.\src\MemDriver.vhd=VHDL Source Code
+.\src\Leitura_CacheDados.asdb=Accelerated Waveform File
+.\src\Leitura_CacheDados.awc=Accelerated Waveform Configuration

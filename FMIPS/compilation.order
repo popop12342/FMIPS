@@ -9,3 +9,4 @@
 .\src\CacheDados_UC.vhd
 .\src\WriteBuffer.vhd
 .\src\CacheDados.vhd
+.\src\MemDriver.vhd

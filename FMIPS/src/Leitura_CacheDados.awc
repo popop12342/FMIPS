@@ -1,0 +1,68 @@
+<config>
+    <version>
+        2.1
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="9c305bfc416382ef1b5d978360230a00">Leitura_CacheDados.asdb</database>
+    </databases>
+    <signallists>
+        <signallist id="0">
+        <signal>/CacheDados_TB/ender</signal>
+        <signal>/CacheDados_TB/dados_in</signal>
+        <signal>/CacheDados_TB/dados_out</signal>
+        <signal>/CacheDados_TB/dadosMPBuffer</signal>
+        <signal>/CacheDados_TB/enderMPBuffer</signal>
+        <signal>/CacheDados_TB/dadosMPUC</signal>
+        <signal>/CacheDados_TB/enderMPUC</signal>
+        <signal>/CacheDados_TB/enderMP</signal>
+        <signal>/CacheDados_TB/dados_inMP</signal>
+        <signal>/CacheDados_TB/dados_outMP</signal>
+        <signal>/CacheDados_TB/clock</signal>
+        <signal>/CacheDados_TB/rw</signal>
+        <signal>/CacheDados_TB/hit</signal>
+        <signal>/CacheDados_TB/prontoMPBuffer</signal>
+        <signal>/CacheDados_TB/rwMPBuffer</signal>
+        <signal>/CacheDados_TB/enableMPBuffer</signal>
+        <signal>/CacheDados_TB/prontoMPUC</signal>
+        <signal>/CacheDados_TB/enableMPUC</signal>
+        <signal>/CacheDados_TB/rwMP</signal>
+        <signal>/CacheDados_TB/enableMP</signal>
+        <signal>/CacheDados_TB/prontoMP</signal>
+        <signal>/CacheDados_TB/CD/DC/ender</signal>
+        <signal>/CacheDados_TB/CD/DC/index_bloco</signal>
+        <signal>/CacheDados_TB/CD/DC/index_palavra</signal>
+        <signal>/CacheDados_TB/CD/DC/valid_tag1</signal>
+        <signal>/CacheDados_TB/CD/DC/valid_tag2</signal>
+        <signal>/CacheDados_TB/CD/DCUC/enderMP</signal>
+        <signal>/CacheDados_TB/CD/DCUC/buffer_cheio</signal>
+        <signal>/CacheDados_TB/CD/DCUC/go_buffer</signal>
+        </signallist>
+    </signallists>
+    <prefbases>
+        <prefbase id="0" >
+            <pref name="End Time" value="133994" />
+            <pref name="Start Time" value="0" />
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="790000" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="0" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+</config>
