@@ -120,32 +120,32 @@ begin
 	
 	Data_process: process
 	begin		  			 
-		ender <= x"00000000";
-		rw <= '1';
-		dados_in <= x"ABBAABBA";
-		wait for 10 ns;
-		ender <= x"00008000";
-		wait for 5 ns;
-		wait until hit = '1';
-		ender <= x"00004000";
-		wait until hit = '1';
-	--	ender <= x"00000000";
---		rw <= '0';
---		wait for 10 ns;
+--		ender <= x"00000000";
 --		rw <= '1';
 --		dados_in <= x"ABBAABBA";
 --		wait for 10 ns;
---		ender <= x"00000008"; -- primiero conjunto
---		wait for 10 ns;
---		ender <= x"00010004"; -- segundo conjunto
---		wait for 10 ns;
---		rw <= '1';
---		dados_in <= x"A0A0A0A0";
---		wait for 10 ns;
---		rw <= '0';
---		wait for 10 ns;
 --		ender <= x"00008000";
+--		wait for 5 ns;
 --		wait until hit = '1';
+--		ender <= x"00004000";
+--		wait until hit = '1';
+		ender <= x"00000000";
+		rw <= '0';
+		wait for 10 ns;
+		rw <= '1';
+		dados_in <= x"ABBAABBA";
+		wait for 10 ns;
+		ender <= x"00000008"; -- primiero conjunto
+		wait for 10 ns;
+		ender <= x"00010004"; -- segundo conjunto
+		wait for 10 ns;
+		rw <= '1';
+		dados_in <= x"A0A0A0A0";
+		wait for 10 ns;
+		rw <= '0';
+		wait for 10 ns;
+		ender <= x"00008000";
+		wait until hit = '1';
 	end process;
 	
 end CacheDados_TB_Arc;

@@ -1,4 +1,4 @@
-Active-HDL 10.5.217.6767 2019-07-02 22:42:36
+Active-HDL 10.5.217.6767 2019-07-03 07:58:50
 
 Elaboration top modules:
 Architecture                  CacheDados_TB_Arc(CacheDados_TB)
@@ -34,9 +34,3 @@ fmips                                | None
 ieee                                 | Standard IEEE packages library
 std                                  | Standard VHDL library
 ------------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+CacheDados_TB CacheDados_TB CacheDados_TB_Arc
-
-
-The performance of simulation is reduced. Version Student Edition

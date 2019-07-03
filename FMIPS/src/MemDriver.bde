@@ -1,0 +1,980 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 144
+ VARIABLES
+ {
+  #ARCHITECTURE="MemDriver"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"dados_inmp\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"dados_outmp\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE2="<range<index=\"0\"><name=\"dadosmpbuffer\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE3="<range<index=\"0\"><name=\"dadosmpuc\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE4="<range<index=\"0\"><name=\"endermp\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE5="<range<index=\"0\"><name=\"endermpbuffer\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE6="<range<index=\"0\"><name=\"endermpuc\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE7="<range<index=\"0\"><name=\"sel\"><left=\"1\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #ENTITY="MemDriver"
+  #LANGUAGE="VHDL"
+  #RANGE_RESOLUTION0="<range<index=\"0\"><name=\"sel\"><left=\"1\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  AUTHOR="felipepinna"
+  COMPANY="poli"
+  CREATIONDATE="03/07/2019"
+  SOURCE=".\\..\\src\\MemDriver.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  PAGESIZE (2632,1800)
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;"
+   RECT (220,260,620,439)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  2, 0, 0
+  {
+   LABEL "block_68"
+   TEXT "with sel select dados_inMP <= dadosMPBuffer when \"01\", \"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\" when others;"
+   RECT (1660,240,2061,340)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  57, 80, 113 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="dados_inMP(31:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (2160,260)
+   VERTEXES ( (2,56) )
+  }
+  SIGNALASSIGN  4, 0, 0
+  {
+   LABEL "block_85"
+   TEXT "with sel select dadosMPUC <= dados_outMP when \"10\" | \"11\", \"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\" when others;"
+   RECT (1660,460,2061,560)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  60, 77, 122 )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="dados_outMP(31:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1000,520)
+   VERTEXES ( (2,78) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="dadosMPBuffer(31:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1000,400)
+   VERTEXES ( (2,83) )
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="dadosMPUC(31:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (2160,480)
+   VERTEXES ( (2,59) )
+  }
+  SIGNALASSIGN  8, 0, 0
+  {
+   LABEL "block_59"
+   TEXT "with sel select enableMP <= '1' when \"01\" | \"10\" | \"11\", '0' when others;"
+   RECT (1660,580,2061,680)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  62, 125 )
+  }
+  INSTANCE  9, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="enableMP"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (2160,600)
+   VERTEXES ( (2,63) )
+  }
+  SIGNALASSIGN  10, 0, 0
+  {
+   LABEL "block_56"
+   TEXT "sel <= enableMPUC & enableMPBuffer;"
+   RECT (1140,240,1541,340)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  110, 128, 131 )
+  }
+  INSTANCE  11, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="enableMPBuffer"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1000,300)
+   VERTEXES ( (2,129) )
+  }
+  INSTANCE  12, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="enableMPUC"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1000,260)
+   VERTEXES ( (2,132) )
+  }
+  SIGNALASSIGN  13, 0, 0
+  {
+   LABEL "block_72"
+   TEXT "with sel select enderMP <= enderMPUC when \"10\" | \"11\", enderMPBuffer when \"01\", \"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\" when others;"
+   RECT (1660,700,2061,820)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  65, 86, 89, 119 )
+  }
+  INSTANCE  14, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="enderMP(31:0)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (2160,720)
+   VERTEXES ( (2,66) )
+  }
+  INSTANCE  15, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="enderMPBuffer(31:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1000,760)
+   VERTEXES ( (2,87) )
+  }
+  INSTANCE  16, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="enderMPUC(31:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   COORD (1140,720)
+   VERTEXES ( (2,90) )
+  }
+  SIGNALASSIGN  17, 0, 0
+  {
+   LABEL "block_77"
+   TEXT "with sel select prontoMPBuffer <= prontoMP when \"01\", '0' when others;"
+   RECT (1660,840,2061,940)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  68, 92, 104 )
+  }
+  INSTANCE  18, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="prontoMP"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1000,900)
+   VERTEXES ( (2,98) )
+  }
+  SIGNALASSIGN  19, 0, 0
+  {
+   LABEL "block_81"
+   TEXT "with sel select prontoMPUC <= prontoMP when \"10\" | \"11\", '0' when others;"
+   RECT (1660,960,2061,1060)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  71, 95, 107 )
+  }
+  INSTANCE  20, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="prontoMPBuffer"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (2160,860)
+   VERTEXES ( (2,69) )
+  }
+  INSTANCE  21, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="prontoMPUC"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (2160,980)
+   VERTEXES ( (2,72) )
+  }
+  SIGNALASSIGN  22, 0, 0
+  {
+   LABEL "block_63"
+   TEXT "with sel select rwMP <= '0' when \"10\" | \"11\", rwMPBuffer when \"01\", '0' when others;"
+   RECT (1660,1080,2061,1180)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  74, 102, 116 )
+  }
+  INSTANCE  23, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="rwMP"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (2160,1100)
+   VERTEXES ( (2,75) )
+  }
+  INSTANCE  24, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="rwMPBuffer"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="STD_LOGIC"
+   }
+   COORD (1000,1140)
+   VERTEXES ( (2,101) )
+  }
+  TEXT  25, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (2212,260,2212,260)
+   ALIGN 4
+   PARENT 3
+  }
+  TEXT  26, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (948,520,948,520)
+   ALIGN 6
+   PARENT 5
+  }
+  TEXT  27, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (948,400,948,400)
+   ALIGN 6
+   PARENT 6
+  }
+  TEXT  28, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (2212,480,2212,480)
+   ALIGN 4
+   PARENT 7
+  }
+  TEXT  29, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (2212,600,2212,600)
+   ALIGN 4
+   PARENT 9
+  }
+  TEXT  30, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (948,300,948,300)
+   ALIGN 6
+   PARENT 11
+  }
+  TEXT  31, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (948,260,948,260)
+   ALIGN 6
+   PARENT 12
+  }
+  TEXT  32, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (2212,720,2212,720)
+   ALIGN 4
+   PARENT 14
+  }
+  TEXT  33, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (948,760,948,760)
+   ALIGN 6
+   PARENT 15
+  }
+  TEXT  34, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1088,720,1088,720)
+   ALIGN 6
+   PARENT 16
+  }
+  TEXT  35, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (948,900,948,900)
+   ALIGN 6
+   PARENT 18
+  }
+  TEXT  36, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (2212,860,2212,860)
+   ALIGN 4
+   PARENT 20
+  }
+  TEXT  37, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (2212,980,2212,980)
+   ALIGN 4
+   PARENT 21
+  }
+  TEXT  38, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (2212,1100,2212,1100)
+   ALIGN 4
+   PARENT 23
+  }
+  TEXT  39, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (948,1140,948,1140)
+   ALIGN 6
+   PARENT 24
+  }
+  NET BUS  40, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="dados_inMP(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  41, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="dados_outMP(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  42, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="dadosMPBuffer(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  43, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="dadosMPUC(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET WIRE  44, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="enableMP"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET WIRE  45, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="enableMPBuffer"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET WIRE  46, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="enableMPUC"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET BUS  47, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="enderMP(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  48, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="enderMPBuffer(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET BUS  49, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="enderMPUC(31:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  NET WIRE  50, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="prontoMPBuffer"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET WIRE  51, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="prontoMPUC"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET WIRE  52, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="rwMP"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET WIRE  53, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="rwMPBuffer"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET WIRE  54, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="prontoMP"
+    #VHDL_TYPE="STD_LOGIC"
+   }
+  }
+  NET BUS  55, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="sel(1:0)"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+  }
+  VTX  56, 0, 0
+  {
+   COORD (2160,260)
+  }
+  VTX  57, 0, 0
+  {
+   COORD (2061,260)
+  }
+  BUS  58, 0, 0
+  {
+   NET 40
+   VTX 56, 57
+  }
+  VTX  59, 0, 0
+  {
+   COORD (2160,480)
+  }
+  VTX  60, 0, 0
+  {
+   COORD (2061,480)
+  }
+  BUS  61, 0, 0
+  {
+   NET 43
+   VTX 59, 60
+  }
+  VTX  62, 0, 0
+  {
+   COORD (2061,600)
+  }
+  VTX  63, 0, 0
+  {
+   COORD (2160,600)
+  }
+  WIRE  64, 0, 0
+  {
+   NET 44
+   VTX 62, 63
+  }
+  VTX  65, 0, 0
+  {
+   COORD (2061,720)
+  }
+  VTX  66, 0, 0
+  {
+   COORD (2160,720)
+  }
+  BUS  67, 0, 0
+  {
+   NET 47
+   VTX 65, 66
+  }
+  VTX  68, 0, 0
+  {
+   COORD (2061,860)
+  }
+  VTX  69, 0, 0
+  {
+   COORD (2160,860)
+  }
+  WIRE  70, 0, 0
+  {
+   NET 50
+   VTX 68, 69
+  }
+  VTX  71, 0, 0
+  {
+   COORD (2061,980)
+  }
+  VTX  72, 0, 0
+  {
+   COORD (2160,980)
+  }
+  WIRE  73, 0, 0
+  {
+   NET 51
+   VTX 71, 72
+  }
+  VTX  74, 0, 0
+  {
+   COORD (2061,1100)
+  }
+  VTX  75, 0, 0
+  {
+   COORD (2160,1100)
+  }
+  WIRE  76, 0, 0
+  {
+   NET 52
+   VTX 74, 75
+  }
+  VTX  77, 0, 0
+  {
+   COORD (1660,520)
+  }
+  VTX  78, 0, 0
+  {
+   COORD (1000,520)
+  }
+  BUS  79, 0, 0
+  {
+   NET 41
+   VTX 77, 78
+  }
+  VTX  80, 0, 0
+  {
+   COORD (1660,300)
+  }
+  VTX  81, 0, 0
+  {
+   COORD (1620,300)
+  }
+  BUS  82, 0, 0
+  {
+   NET 42
+   VTX 80, 81
+  }
+  VTX  83, 0, 0
+  {
+   COORD (1000,400)
+  }
+  VTX  84, 0, 0
+  {
+   COORD (1620,400)
+  }
+  BUS  85, 0, 0
+  {
+   NET 42
+   VTX 83, 84
+  }
+  VTX  86, 0, 0
+  {
+   COORD (1660,760)
+  }
+  VTX  87, 0, 0
+  {
+   COORD (1000,760)
+  }
+  BUS  88, 0, 0
+  {
+   NET 48
+   VTX 86, 87
+  }
+  VTX  89, 0, 0
+  {
+   COORD (1660,720)
+  }
+  VTX  90, 0, 0
+  {
+   COORD (1140,720)
+  }
+  BUS  91, 0, 0
+  {
+   NET 49
+   VTX 89, 90
+  }
+  VTX  92, 0, 0
+  {
+   COORD (1660,900)
+  }
+  WIRE  94, 0, 0
+  {
+   NET 54
+   VTX 92, 99
+  }
+  VTX  95, 0, 0
+  {
+   COORD (1660,1020)
+  }
+  VTX  96, 0, 0
+  {
+   COORD (1620,1020)
+  }
+  WIRE  97, 0, 0
+  {
+   NET 54
+   VTX 95, 96
+  }
+  VTX  98, 0, 0
+  {
+   COORD (1000,900)
+  }
+  VTX  99, 0, 0
+  {
+   COORD (1620,900)
+  }
+  WIRE  100, 0, 0
+  {
+   NET 54
+   VTX 98, 99
+  }
+  VTX  101, 0, 0
+  {
+   COORD (1000,1140)
+  }
+  VTX  102, 0, 0
+  {
+   COORD (1660,1140)
+  }
+  WIRE  103, 0, 0
+  {
+   NET 53
+   VTX 101, 102
+  }
+  VTX  104, 0, 0
+  {
+   COORD (1660,860)
+  }
+  VTX  105, 0, 0
+  {
+   COORD (1640,860)
+  }
+  BUS  106, 0, 0
+  {
+   NET 55
+   VTX 104, 105
+  }
+  VTX  107, 0, 0
+  {
+   COORD (1660,980)
+  }
+  VTX  108, 0, 0
+  {
+   COORD (1640,980)
+  }
+  BUS  109, 0, 0
+  {
+   NET 55
+   VTX 107, 108
+  }
+  VTX  110, 0, 0
+  {
+   COORD (1541,260)
+  }
+  BUS  112, 0, 0
+  {
+   NET 55
+   VTX 110, 114
+  }
+  VTX  113, 0, 0
+  {
+   COORD (1660,260)
+  }
+  VTX  114, 0, 0
+  {
+   COORD (1640,260)
+  }
+  BUS  115, 0, 0
+  {
+   NET 55
+   VTX 113, 114
+  }
+  VTX  116, 0, 0
+  {
+   COORD (1660,1100)
+  }
+  VTX  117, 0, 0
+  {
+   COORD (1640,1100)
+  }
+  BUS  118, 0, 0
+  {
+   NET 55
+   VTX 116, 117
+  }
+  VTX  119, 0, 0
+  {
+   COORD (1660,800)
+  }
+  VTX  120, 0, 0
+  {
+   COORD (1640,800)
+  }
+  BUS  121, 0, 0
+  {
+   NET 55
+   VTX 119, 120
+  }
+  VTX  122, 0, 0
+  {
+   COORD (1660,480)
+  }
+  VTX  123, 0, 0
+  {
+   COORD (1640,480)
+  }
+  BUS  124, 0, 0
+  {
+   NET 55
+   VTX 122, 123
+  }
+  VTX  125, 0, 0
+  {
+   COORD (1660,600)
+  }
+  VTX  126, 0, 0
+  {
+   COORD (1640,600)
+  }
+  BUS  127, 0, 0
+  {
+   NET 55
+   VTX 125, 126
+  }
+  VTX  128, 0, 0
+  {
+   COORD (1140,300)
+  }
+  VTX  129, 0, 0
+  {
+   COORD (1000,300)
+  }
+  WIRE  130, 0, 0
+  {
+   NET 45
+   VTX 128, 129
+  }
+  VTX  131, 0, 0
+  {
+   COORD (1140,260)
+  }
+  VTX  132, 0, 0
+  {
+   COORD (1000,260)
+  }
+  WIRE  133, 0, 0
+  {
+   NET 46
+   VTX 131, 132
+  }
+  BUS  134, 0, 0
+  {
+   NET 42
+   VTX 81, 84
+  }
+  WIRE  136, 0, 0
+  {
+   NET 54
+   VTX 99, 96
+  }
+  BUS  138, 0, 0
+  {
+   NET 55
+   VTX 114, 123
+  }
+  BUS  139, 0, 0
+  {
+   NET 55
+   VTX 123, 126
+  }
+  BUS  140, 0, 0
+  {
+   NET 55
+   VTX 126, 120
+  }
+  BUS  141, 0, 0
+  {
+   NET 55
+   VTX 120, 105
+  }
+  BUS  142, 0, 0
+  {
+   NET 55
+   VTX 105, 108
+  }
+  BUS  143, 0, 0
+  {
+   NET 55
+   VTX 108, 117
+  }
+ }
+ 
+}
+

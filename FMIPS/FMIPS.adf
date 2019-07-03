@@ -67,6 +67,10 @@ Selected=
 /MemDriver.vhd=-1
 /Leitura_CacheDados.asdb=-1
 /Leitura_CacheDados.awc=-1
+/teste_buffer_cachedados.asdb=-1
+/teste_buffer_cachedados.awc=-1
+/CacheInstrucoes_teste_correto.asdb=-1
+/CacheInstrucoes_teste_correto.awc=-1
 
 [Files.Data]
 .\src\CacheInstrucoes_FD.vhd=VHDL Source Code
@@ -89,3 +93,7 @@ Selected=
 .\src\MemDriver.vhd=VHDL Source Code
 .\src\Leitura_CacheDados.asdb=Accelerated Waveform File
 .\src\Leitura_CacheDados.awc=Accelerated Waveform Configuration
+.\src\teste_buffer_cachedados.asdb=Accelerated Waveform File
+.\src\teste_buffer_cachedados.awc=Accelerated Waveform Configuration
+.\src\CacheInstrucoes_teste_correto.asdb=Accelerated Waveform File
+.\src\CacheInstrucoes_teste_correto.awc=Accelerated Waveform Configuration
